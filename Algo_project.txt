@@ -1,0 +1,26 @@
+Début
+    Définir voyelles comme "aeiouyAEIOUY"
+    
+    Afficher "Entrez une phrase :"
+    Lire phrase
+    
+    // Calcul de la longueur de la phrase
+    longueur_phrase ← longueur(phrase)
+    
+    // Calcul du nombre de mots dans la phrase
+    mots ← diviser(phrase, " ")  // Divise la phrase par les espaces
+    nombre_mots ← longueur(mots)
+    
+    // Calcul du nombre de voyelles dans la phrase
+    nombre_voyelles ← 0
+    Pour chaque caractère dans phrase faire
+        Si caractère dans voyelles alors
+            nombre_voyelles ← nombre_voyelles + 1
+        Fin Si
+    Fin Pour
+    
+    // Affichage des résultats
+    Afficher "Longueur de la phrase : ", longueur_phrase
+    Afficher "Nombre de mots : ", nombre_mots
+    Afficher "Nombre de voyelles : ", nombre_voyelles
+Fin
